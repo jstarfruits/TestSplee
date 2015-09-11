@@ -101,11 +101,21 @@ struct EXSLength: SpeedTest {
 }
 
 /// isEmptyによる存在チェック
-struct EXStringEmpty: SpeedTest {
+struct EXSEmpty: SpeedTest {
 	var str = NSUUID().UUIDString
 	
 	func main() {
 		if !str.isEmpty {
+		}
+	}
+}
+
+/// str != ""による存在チェック
+struct EXSEqual: SpeedTest {
+	var str = NSUUID().UUIDString
+	
+	func main() {
+		if str != "" {
 		}
 	}
 }

@@ -35,13 +35,13 @@ class ViewController: UIViewController {
 		
 		None().start(defaultCnt)
 		
-		NLLet(str: nil).start(defaultCnt)
 		NLEqual(str: nil).start(defaultCnt)
+		NLLet(str: nil).start(defaultCnt)
 		
 		// 値がある場合は
 		
-		NLLet(str: NSUUID().UUIDString).start(defaultCnt)
 		NLEqual(str: NSUUID().UUIDString).start(defaultCnt)
+		NLLet(str: NSUUID().UUIDString).start(defaultCnt)
 		
 		// 配列の存在チェック
 		
@@ -51,7 +51,8 @@ class ViewController: UIViewController {
 		
 		// 文字列の存在チェック
 		EXSLength().start(defaultCnt)
-		EXStringEmpty().start(defaultCnt)
+		EXSEmpty().start(defaultCnt)
+		EXSEqual().start(defaultCnt)
 		
 		// Realmの存在チェック
 		let realm = try! Realm()
